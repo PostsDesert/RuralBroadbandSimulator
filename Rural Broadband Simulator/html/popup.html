@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>
+      <!--Import Google Icon Font <p style="font-size: 14px; font-weight: 300; margin-top: 10px">This extention simulates the effects of rural broadband. As you can see this is a placeholder.</p>-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+      <!--Import materialize.css-->
+	  	<link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	  	<!--Import jQuery before materialize.js-->
+	  	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	  	<script type="text/javascript" src="../js/materialize.min.js"></script>
+	  	<script type="text/javascript" src="../js/popup.js"></script>
+    </head>
+
+    <body>
+		<div class="row" style="width:480px; padding-left: 10px; padding-top: 0px; margin-top: 0px; padding-right: 10px">
+				 <h3 style="color: #0097a7; font-weight: 300; margin-top: 10px">Rural Broadband Simulator</h3>
+				 <button type="hidden" style="outline-color: #ffffff; background: transparent; border: solid 2px #ffffff; position: absolute"></button>
+				<div class="input-field col s12">
+					<select id="mobileBroadband">
+						<optgroup label="Mobile Broadband">
+						<option value="0/0/0">Off</option>
+						<option value="6250/2500/500">GPRS</option>
+						<option value="31250/6250/300">Regular 2G</option>
+						<option value="56250/18750/150">Good 2G</option>
+						<option value="93750/31250/100">Regular 3G</option>
+						<option value="125000/93750/40">Good 3G</option>
+						<option value="500000/375000/20">Regular 4G</option>
+						<option value="1250000/125000/20">FCC Proposed Broadband Standard</option>
+						</optgroup>
+						<optgroup label="Fixed Broadband">
+						<option value="3125000/375000/0">Current FCC Broadband Standard</option>
+						<option value="250000/125000/5">DSL</option>
+						<option value="3750000/1875000/2">WiFi</option>
+						</optgroup>
+					</select>
+					<label>Connection Type</label>
+				</div>
+				<div style="padding: 10px">
+					<p style="font-size: .8rem; color: #9e9e9e; line-height: 1.5; font-family: 'Roboto', sans-serif; font-weight: normal">Number Of Devices Using Network</p>
+					<form action="#">
+						<p class="range-field">
+							<input type="range" id="numberOfDevices" value="1" min="1" max="10" />
+						</p>
+					</form>
+				</div>		
+			</div>
+			<footer class="page-footer" style="background-color:#00838f">
+					<div class="container">
+					  <div class="row">
+						<div class="col l6 s12">
+						  <p class="grey-text text-lighten-4" style="font-size: 14px">
+							  The FCC recently filed a 	&#34;notice of proposed rulemaking&#34; to include mobile broadband in the broadband standard, 
+								increasing the amount of rural area served but effectively lowering the minimum broadband speed to 10 Mbps/1 Mbps from its original 25 Mbps/3 Mbps.
+								To demonstrate the possible impact of allowing mobile broadband to serve as &#34;adequate broadband&#34;, this extension will help simulate a slow (rural) internet connection. 
+							  </p>
+					<div class="footer-copyright">
+					  <div class="container">
+						<a class="grey-text text-lighten-4" href="#" id="bitlyLink">bit.ly/ruralbroadbandsim</a>
+					  <a class="grey-text text-lighten-4 right" href="#" id="essayLink">Read The Full Essay Here</a>
+					  </div>
+					</div>
+				  </footer>
+					  
+		</div>
+    </body>
+  </html>
